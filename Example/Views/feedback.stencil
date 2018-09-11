@@ -1,0 +1,49 @@
+{% extends "base.stencil" %}
+
+{% block title %}Feedback{% endblock %}
+
+{% block body %}
+    <div class="text-center my-3">
+        <img src="/public/img/logo.png" height="150">
+        <h1>Server-side Swift Conference</h1>
+    </div>
+    <h2>Leave your feedback</h2>
+    <form method="post" action="feedback">
+        <div class="form-group">
+            <label>Rating</label>
+            <select class="form-control custom-select" name="rating">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5" selected>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Feedback</label>
+            <textarea class="form-control" name="comment" rows="8"></textarea>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+        {% if showConfirmation %}
+            <div class="alert alert-success">
+                Thanks for your feedback!
+            </div>
+        {% endif %}
+    </form>
+    <h2>Feedback from other users</h2>
+    {% for feedback in feedback %}
+        <p>
+            <span class="text-muted">{{ feedback.date }}</span><br>
+            {% if feedback.comment %}
+                {{ feedback.comment }}<br>
+            {% endif %}
+            Rating: {{ feedback.rating }}
+        </p>
+    {% endfor %}
+    <p class="small text-muted">
+        Number of ratings: {{ numberOfRatings }}<br>
+        Average rating: {{ averageRating }}
+    </p>
+{% endblock %}

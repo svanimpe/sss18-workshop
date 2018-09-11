@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Server-side Swift Conference - {% block title %}{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="/public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/public/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        {% block body %}{% endblock %}
+    </div>
+    <script src="/public/js/jquery.min.js"></script>
+    <script src="/public/js/popper.min.js"></script>
+    <script src="/public/js/bootstrap.min.js"></script>
+</body>
+</html>
