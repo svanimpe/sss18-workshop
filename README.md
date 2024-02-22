@@ -448,12 +448,7 @@ If you'd like to share your work with the other attendees, contact me and I'll a
 - [Stencil](https://github.com/stencilproject/Stencil).
 - [Postman](https://www.getpostman.com) is a helpful tool to send and debug requests.
 - [Swift Blog](https://github.com/svanimpe/swift-blog) is the source code for my personal website and blog. It's a small and approachable project and contains instructions on how to deploy to IBM Cloud.
-- [Around The Table](https://github.com/svanimpe/around-the-table) is a platform that supports tabletop gaming communities. It goes way beyond what we've covered today and is the topic of my talk on Friday.
 
 If you're looking for SQL storage, have a look at Kitura's [Kuery](https://github.com/IBM-Swift/Swift-Kuery) and [Kuery ORM](https://github.com/IBM-Swift/Swift-Kuery-ORM) frameworks.
 
 If NoSQL is what you need, check out Kitura's [CouchDB](https://github.com/IBM-Swift/Kitura-CouchDB) driver. For MongoDB, use [MongoKitten](https://github.com/OpenKitten/MongoKitten) or MongoDB's new [official driver](https://github.com/mongodb/mongo-swift-driver).
-
-## Show your support
-
-If you enjoyed the workshop and want to support my open source work, please consider <a href="https://www.patreon.com/svanimpe">becoming a patron</a>.
